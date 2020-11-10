@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAZZ Fitness.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Syne Mono', monospace;
+            margin: 0px;
+            padding: 0px;
+            background: url('Images/gym.jpg');
+
+            height: 2500px;
+
+        }
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 35px;
+            top: 22px;
+
+        }
+
+        .left img {
+            width: 106px;
+            filter: invert();
+            /*Helps to change the color from black to white or vice-versa*/
+        }
+
+        .left div {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        .mid {
+            display: block;
+            width: 39%;
+            margin: 20px auto;
+            /* border: 3px solid green; */
+            /* background-color: black; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 35px;
+            top: 22px;
+            /* border: 3px solid yellow; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 19px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 5px;
+
+        }
+
+        .navbar li a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .btn {
+            font-family: 'Syne Mono', monospace;
+            font-size: 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            /* change the cursor pointer.*/
+            padding: 8px;
+        }
+
+        .btn:hover {
+            color: deeppink;
+            text-decoration: underline;
+        }
+
+        .container {
+            /* border: 3px solid rgb(251, 255, 0); */
+            margin: 120px 41px;
+            padding: 10px 10px;
+            border-radius: 6px;
+            width: 40%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            display: block;
+            width: 350px;
+            margin: 9px auto;
+            padding: 4px;
+            border: 3px solid black;
+            border-radius: 5px;
+            font-family: 'Syne Mono', monospace;
+            font-size: 10px;
+        }
+
+        .container button {
+            display: block;
+            width: 92px;
+            margin: 15px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="Images/logo1.jpg" alt="">
+            <div>BAZZ Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <strong>
+                <ul class="navbar">
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">Trainings</a></li>
+                    <li><a href="#" target="_blank">Fitness_Calculator</a></li>
+                    <li><a href="#" target="_blank">About Us</a></li>
+                </ul>
+
+            </strong>
+        </div>
+        <!-- Right box for some buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>JOIN NOW !</h1>
+        <form action="noaction.php" target="_blank">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone No.">
+            </div>
+
+            <button class="btn">Submit Now</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
